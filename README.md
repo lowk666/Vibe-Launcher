@@ -1,4 +1,4 @@
-# Vibe-Launcher
+# [Vibe-Launcher](https://lowk666.github.io/Vibe-Launcher/)
  VIBE Client
 
 > Modern singleplayer utility mod-menu for **Minecraft Fabric 1.21.11** — C++, ImGui, MinHook, JNI.
