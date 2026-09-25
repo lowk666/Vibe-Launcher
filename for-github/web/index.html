@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIBE Client — Singleplayer utility for Minecraft Fabric 1.21.11</title>
+<style>
+  :root { --bg:#0c0a09; --panel:#14110e; --line:#443820; --amber:#e8aa46;
+          --tan:#f2e7d5; --dim:#8f8272; --green:#4ade80; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--tan); font-family:"Inter","Segoe UI",Arial,sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:48px 24px 64px; }
+  header.hero { background:linear-gradient(120deg,#2e1c0d,#703d16); border-radius:18px;
+                padding:56px 40px; margin-bottom:28px; }
+  .hero h1 { font-size:52px; letter-spacing:10px; }
+  .hero p { color:#e6cf9f; margin-top:10px; font-size:17px; }
+  .badges span { display:inline-block; border:1px solid var(--line); border-radius:20px;
+                 padding:5px 14px; margin:18px 8px 0 0; font-size:13px; color:var(--amber); }
+  .btn { display:inline-block; margin-top:26px; padding:15px 42px; border-radius:12px;
+         background:linear-gradient(90deg,#e8aa46,#965e23); color:#1c1206;
+         font-weight:800; font-size:17px; text-decoration:none; }
+  .btn.ghost { background:transparent; border:1px solid var(--line); color:var(--tan); margin-left:12px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:28px 0; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:22px; }
+  .card h3 { color:var(--amber); margin-bottom:8px; font-size:16px; }
+  .card p { color:var(--dim); font-size:14px; line-height:1.55; }
+  .honest { border:1px solid #5a3a1a; background:#171008; border-radius:14px; padding:22px; font-size:14px; }
+  .honest b { color:var(--green); } .honest u { color:#f87171; }
+  footer { margin-top:28px; color:var(--dim); font-size:13px; text-align:center; }
+  code { background:#000; padding:2px 7px; border-radius:6px; color:var(--amber); }
+  @media (max-width:640px){ .grid{grid-template-columns:1fr;} .hero h1{font-size:36px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>VIBE</h1>
+    <p>Modern singleplayer utility mod-menu for <b>Minecraft Fabric 1.21.11</b></p>
+    <div class="badges"><span>v1.0.0</span><span>Fabric 1.21.11</span><span>Singleplayer only</span><span>Signed: Lowk Inc</span></div>
+    <!-- TODO: point to the real GitHub Release asset -->
+    <a class="btn" href="#">Download Vibe Launcher</a>
+    <a class="btn ghost" href="#">Discord: whoislowk</a>
+  </header>
+
+  <div class="grid">
+    <div class="card"><h3>Launcher UI</h3><p>Injection, live console and support tickets in one dark modern app. No console windows.</p></div>
+    <div class="card"><h3>Combat &amp; visuals</h3><p>Triggerbot, legit aim assist, hit select, ESP and scaffold helper — all singleplayer-gated.</p></div>
+    <div class="card"><h3>Support tickets</h3><p>Create tickets in-app. Owner answers with VibeTickets; replies show up in your Support tab.</p></div>
+    <div class="card"><h3>Open source</h3><p>Full C++ source included. Build it yourself with <code>build.bat</code> and compare hashes.</p></div>
+  </div>
+
+  <div class="honest">
+    <b>Honest software:</b> singleplayer only, <u>no anticheat bypass</u>, antivirus will likely flag it
+    (injectors always do — exclude the folder or build from source), multiplayer cheating gets you banned.
+    Binaries self-signed as Lowk Inc: verify under Properties → Digital Signatures.
+  </div>
+
+  <footer>VIBE Client · Lowk Inc · owner <b>whoislowk</b> · singleplayer only</footer>
+</div>
+</body>
+</html>
